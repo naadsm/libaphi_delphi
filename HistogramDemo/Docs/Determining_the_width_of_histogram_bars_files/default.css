@@ -1,0 +1,403 @@
+﻿/*Created with Adobe RoboHelp 8.*/
+BODY {
+	font-family: Arial;
+	background-color: #ffffff;
+}
+H1 {
+	font-weight: bold;
+	font-size: 20pt;
+	font-family: Arial, sans-serif;
+	x-next-class: see-also;
+	x-next-type: P;
+}
+LI.H1 {
+	font-weight: bold;
+	font-size: 20pt;
+	font-family: Arial, sans-serif;
+}
+H2 {
+	font-weight: bold;
+	font-size: 12pt;
+}
+LI.H2 {
+	font-weight: bold;
+	font-size: 12pt;
+}
+H3 {
+	font-size: 14pt;
+	font-weight: bold;
+	font-style: normal;
+}
+LI.H3 {
+	font-size: 14pt;
+	font-weight: bold;
+	font-style: normal;
+}
+H4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+LI.H4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+H5 {
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: italic;
+}
+LI.H5 {
+	font-size: 12pt;
+	font-weight: bold;
+	font-style: italic;
+}
+P {
+	font-size: 10pt;
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	text-align: Left;
+	font-style: normal;
+	font-weight: normal;
+	margin-top: 0pt;
+	margin-bottom: 9pt;
+	text-decoration: none;
+}
+LI.P {
+	font-size: 10pt;
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	text-align: Left;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+LI.kadov-P {
+	font-size: 10pt;
+	font-family: Verdana, sans-serif;
+	text-align: Justify;
+}
+A.expandspot {
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+SPAN.expandtext {
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+A.dropspot {
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+A.glossterm {
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+SPAN.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+OL {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+UL {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+A:link {
+	color: #0000ff;
+}
+A.popupspot {
+	color: #008000;
+}
+SPAN.text-popup {
+	color: #008000;
+	text-decoration: underline underline;
+}
+A:visited {
+	color: #0000ff;
+}
+SPAN.sub {
+	font-size: 7pt;
+	vertical-align: Sub;
+}
+SPAN.super {
+	font-size: 7pt;
+	vertical-align: Super;
+}
+P.Footer {
+	color: #808080;
+	text-align: center;
+}
+LI.P-Footer {
+	color: #808080;
+}
+LI.kadov-P-CFooter {
+	color: #808080;
+}
+P.see-also {
+	font-size: 8pt;
+	font-style: italic;
+	background-color: #eeeeee;
+	font-weight: normal;
+	border-left-style: Solid;
+	border-left-width: 1px;
+	border-right-style: Solid;
+	border-right-width: 1px;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-left-color: #5d5d5d;
+	border-right-color: #5d5d5d;
+	border-top-color: #5d5d5d;
+	border-bottom-color: #5d5d5d;
+	text-decoration: none;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+LI.P-see-also {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+}
+P.QuickJumpMenu {
+	font-size: 8pt;
+	margin-top: 0pt;
+}
+LI.P-QuickJumpMenu {
+	font-size: 8pt;
+}
+LI.P-ExampleFormula {
+	font-weight: bold;
+	font-style: normal;
+	color: #000080;
+	text-align: Center;
+}
+P.read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+	font-size: 10pt;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-read-on {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: italic;
+	color: #008000;
+}
+LI.P-VoseFunction {
+	font-family: "MS Gothic", monospace;
+	color: #800000;
+}
+SPAN.ExampleFormula {
+	font-weight: bold;
+	font-style: normal;
+	color: #000080;
+	font-family: Verdana, sans-serif;
+}
+SPAN.ExampleModel {
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: normal;
+}

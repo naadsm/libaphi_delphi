@@ -1,0 +1,99 @@
+unit FunctionEnums;
+
+(*
+FunctionEnums.pas
+-----------------
+Begin: 2005/06/08
+Last revision: $Date: 2009-11-10 01:22:58 $ $Author: areeves $
+Version: $Revision: 1.3 $
+Project: APHI Delphi Library for Simulation Modeling
+Website: http://www.naadsm.org/opensource/libaphi/
+Author: Aaron Reeves <Aaron.Reeves@colostate.edu>
+--------------------------------------------------
+Copyright (C) 2005 - 2008 Animal Population Health Institute, Colorado State University
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General
+Public License as published by the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+*)
+
+
+{*
+  Use this code as a template for modeling applications developed with
+  the APHI Delphi Library for Stochastic Modeling.
+}
+
+
+interface
+
+  {*
+   The definitions in this type must be specified for every simulation model application
+   that uses either a probability density function or a relational function.
+
+   There is nothing in the functions below or in the implementation section that
+   should require application-specific changes.
+  }
+  type TSMChart = (
+    // Standard unknown/unspecified type.
+    // This type MUST be the first one in the list!
+  	XNoChart,
+
+    // If this were a real application,
+    // additional types would be defined here.
+
+    // This type MUST be the last one in the list!
+    XLastChartInList
+  );
+  
+   type TChartSet = set of TSMChart;
+
+  { Returns the string definition (name) that corresponds to the designated chart type. }
+  function smChartStr( val: TSMChart ): string;
+
+  { Returns the chart type that corresponds to the indicated string definition/name. }
+  function strToSMChart( val: string ): TSMChart;
+
+  
+implementation
+
+	uses
+		// Standard Delphi units
+  	SysUtils,
+  	TypInfo
+  ;
+  
+
+  function smChartStr( val: TSMChart ): string;
+  	begin
+			result := getEnumName( TypeInfo( TSMChart ), ord( val ) );
+    end
+  ;
+
+
+  function strToSMChart( val: string ): TSMChart;
+    var
+      i: TSMChart;
+      chartTypeName: string;
+    begin
+      result := XNoChart;
+
+      for i := XNoChart to XLastChartInList do
+        begin
+          chartTypeName := getEnumName( TypeInfo( TSMChart ), ord( i ) );
+
+          if( val = chartTypeName ) then
+            begin
+              result := i;
+              break;
+            end
+          ;
+        end
+      ;
+
+      if( XNoChart = result ) then
+        raise exception.Create( 'Unrecognized TSMChart in strToSMChart: ' + val )
+      ;
+    end
+  ;
+
+end.

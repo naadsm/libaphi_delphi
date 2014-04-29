@@ -1,0 +1,1768 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+lang="en"><head>
+
+
+<title>Histogram - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.16alpha-wmf">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit">
+<link rel="edit" title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit">
+<link rel="apple-touch-icon" 
+href="http://en.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://en.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" 
+href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia 
+(en)">
+<link rel="copyright" 
+href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS 
+Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom 
+Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="Histogram_files/shared.css" type="text/css"
+ media="screen">
+<link rel="stylesheet" href="Histogram_files/commonPrint.css" 
+type="text/css" media="print">
+<link rel="stylesheet" href="Histogram_files/main.css" type="text/css" 
+media="screen">
+<link rel="stylesheet" href="Histogram_files/main_002.css" 
+type="text/css" media="handheld">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE50Fixes.css?257z43" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE55Fixes.css?257z43" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE60Fixes.css?257z43" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE70Fixes.css?257z43" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="Histogram_files/index_003.css" 
+type="text/css" media="all">
+<link rel="stylesheet" href="Histogram_files/index_005.css" 
+type="text/css" media="print">
+<link rel="stylesheet" href="Histogram_files/index_002.css" 
+type="text/css" media="handheld">
+<link rel="stylesheet" href="Histogram_files/index_004.css" 
+type="text/css" media="all">
+<link rel="stylesheet" href="Histogram_files/index.css" type="text/css" 
+media="all">
+<script type="text/javascript">
+var skin="monobook",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Histogram",
+wgTitle="Histogram",
+wgAction="view",
+wgArticleId=13266,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=352446857,
+wgVersion="1.16alpha-wmf",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgTrackingToken="842725e2cceff462e4ec887ad9d39916",
+wgClickTrackingIsThrottled=true,
+wgNotice="",
+wgNoticeLocal="";
+</script>
+<script src="Histogram_files/wikibits.js" type="text/javascript"></script>
+<script src="Histogram_files/ajax.js" type="text/javascript"></script>
+<script src="Histogram_files/mwsuggest.js" type="text/javascript"></script>
+<script type="text/javascript" src="Histogram_files/centralnotice.js"></script><style type="text/css">
+#centralNotice .siteNoticeSmall{display:none;}
+#centralNotice .siteNoticeSmallAnon{display:none;}
+#centralNotice .siteNoticeSmallUser{display:none;}
+#centralNotice.collapsed .siteNoticeBig{display:none;}
+#centralNotice.collapsed .siteNoticeSmall{display:block;}
+#centralNotice.collapsed .siteNoticeSmallUser{display:block;}
+#centralNotice.collapsed .siteNoticeSmallAnon{display:block;}
+#centralNotice.anonnotice .siteNoticeSmallUser{display:none !important;}
+#centralNotice.usernotice .siteNoticeSmallAnon{display:none !important;}
+</style>
+
+
+<!--[if lt IE 7]><script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/IEFixes.js?257z43"></script>
+	<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<script src="Histogram_files/index.php" type="text/javascript"></script><script type="text/javascript" src="Histogram_files/index_002.php"></script>
+
+<style type="text/css">#bodyContent { position:relative; } 
+.topicon { position:absolute; top:-2em !important;}
+#coordinates{ position:absolute; top:1px !important; right:0px !important;}</style></head><body
+ class="mediawiki ltr ns-0 ns-subject page-Histogram skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content"><div style="visibility: hidden; display: none; width:
+ 602px; height: 402px; margin: 0px; padding: 0px; background-color: 
+white; position: absolute; right: 2em; top: 1em; border: 1px solid gray;
+ z-index: 13;"><iframe style="z-index: 14; position: absolute; right: 
+1px; top: 1px; width: 600px; height: 400px; margin: 0px; padding: 0px;" 
+scrolling="no" frameborder="0"></iframe><img style="z-index: 15; 
+position: absolute; right: 11px; top: 9px; width: 18px; cursor: 
+pointer;" src="Histogram_files/Button_hide.png" title="close"></div>
+		<a id="top"></a>
+		<div id="siteNotice"><script type="text/javascript">if (wgNotice != '') document.writeln(wgNotice);</script><div
+ id="centralNotice" class="expanded anonnotice"><style type="text/css"> 
+/*
+Styles for  Notices
+*/
+
+.notice-wrapper-wikimania-scholar, .notice-collapsed-wrapper-wikimania-scholar {
+    margin: 2px auto 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Arial','Helvetica','Tahoma',sans-serif;
+    color: #333;
+    background-color: #ddd;
+    font-size: .9em;
+    font-weight: 200;
+}
+
+.notice-wrapper-wikimania-scholar
+{
+    border: 1px solid #bbb;
+    background-color: #fcfcfc;
+    text-align: left;
+    font-size: .9em;
+}
+
+.notice-wrapper-wikimania-scholar a
+{
+    color: #006699;
+}
+
+.trans-box
+{
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.toggle-box-wikimania-scholar
+{
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.notice-text-wikimania-scholar
+{
+    margin: 0 auto 5px;
+    padding: 7px 5px 5px;
+    font-size: 1.2em;
+}
+
+.line-ht-fix
+{
+    line-height: 1em;
+}
+
+#centralNotice.anonnotice .siteNoticeUser 
+{
+    display:none !important;
+}
+
+#centralNotice.collapsed .siteNoticeUser
+{
+    display:none;
+}
+
+</style>
+
+<table class="siteNoticeUser notice-wrapper-wikimania-scholar">
+<tbody><tr>
+ <td>
+  <div class="notice-text-wikimania-scholar">
+  <a href="http://wikimania2010.wikimedia.org/wiki/Scholarships">Scholarship</a>
+ applications for <a href="http://wikimania2010.wikimedia.org/wiki/">Wikimania
+ 2010</a> are now open. <a 
+href="http://wikimania2010.wikimedia.org/wiki/Scholarships">Apply now!</a>
+  </div>
+ </td>
+ <td class="line-ht-fix">
+   <span class="toggle-box-wikimania-scholar">
+   [<a href="#" onclick="toggleNotice();return
+false">Hide</a>]
+ </span><br>
+  <span class="trans-box">
+  [<a href="http://meta.wikimedia.org/wiki/Wikimania_2010/CentralNotice">Help
+ us with translations!</a>]
+  </span>
+ </td>
+</tr>
+</tbody></table>
+<div class="siteNoticeSmallAnon 
+notice-collapsed-wrapper-wikimania-scholar">
+</div></div>
+</div>		<h1 id="firstHeading" class="firstHeading">Histogram</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>,
+ <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div class="dablink">For the histograms used in digital image 
+processing, see <a href="http://en.wikipedia.org/wiki/Image_histogram" 
+title="Image histogram">Image histogram</a> and <a 
+href="http://en.wikipedia.org/wiki/Color_histogram" title="Color 
+histogram">Color histogram</a>.</div>
+<table class="infobox" style="width: 22em; text-align: left; font-size: 
+88%; line-height: 1.5em;" cellspacing="5">
+<tbody><tr>
+<th colspan="2" class="" style="text-align: center; font-size: 125%; 
+font-weight: bold; background: none repeat scroll 0% 0% LightPink;">Histogram</th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align: center;"><a 
+href="http://en.wikipedia.org/wiki/File:Histogram_of_arrivals_per_minute.svg"
+ class="image"><img alt="Histogram of arrivals per minute.svg" 
+src="Histogram_files/250px-Histogram_of_arrivals_per_minute.png" 
+height="212" width="250"></a></td>
+</tr>
+<tr>
+<th colspan="2" class="" style="text-align: center; background: none 
+repeat scroll 0% 0% LightPink; font-size: 110%;">One of the <b><a 
+href="http://en.wikipedia.org/wiki/Seven_Basic_Tools_of_Quality" 
+title="Seven Basic Tools of Quality">Seven Basic Tools of Quality</a></b></th>
+</tr>
+<tr class="">
+<th style="text-align: left;">First described by</th>
+<td class="" style=""><a 
+href="http://en.wikipedia.org/wiki/Karl_Pearson" title="Karl Pearson">Karl
+ Pearson</a></td>
+</tr>
+<tr class="">
+<th style="text-align: left;">Purpose</th>
+<td class="" style="">To roughly assess the <a 
+href="http://en.wikipedia.org/wiki/Probability_distribution" 
+title="Probability distribution">probability distribution</a> of a given
+ variable by depicting the frequencies of observations occurring in 
+certain ranges of values</td>
+</tr>
+</tbody></table>
+<p>In <a href="http://en.wikipedia.org/wiki/Statistics" 
+title="Statistics">statistics</a>, a <b>histogram</b> is a <a 
+href="http://en.wikipedia.org/wiki/Graphical_display" title="Graphical 
+display" class="mw-redirect">graphical display</a> of tabular <a 
+href="http://en.wikipedia.org/wiki/Frequency_%28statistics%29" 
+title="Frequency (statistics)">frequencies</a>, shown as adjacent <a 
+href="http://en.wikipedia.org/wiki/Rectangle" title="Rectangle">rectangles</a>.
+ Each rectangle is erected over an interval, with an area equal to the 
+frequency of the interval. The height of a rectangle is also equal to 
+the frequency density of the interval, i.e. the frequency divided by the
+ width of the interval. The total area of the histogram is equal to the 
+number of data. A histogram may also be based on the relative 
+frequencies instead. It then shows what proportion of cases fall into 
+each of several <a href="http://en.wikipedia.org/wiki/Categorization" 
+title="Categorization">categories</a> (a form of <a 
+href="http://en.wikipedia.org/wiki/Data_binning" title="Data binning">data
+ binning</a>), and the total area then equals 1. The categories are 
+usually specified as consecutive, non-overlapping <a 
+href="http://en.wikipedia.org/wiki/Interval_%28mathematics%29" 
+title="Interval (mathematics)">intervals</a> of some variable. The 
+categories (intervals) must be adjacent, and often are chosen to be of 
+the same size,<sup id="cite_ref-0" class="reference"><a 
+href="#cite_note-0"><span>[</span>1<span>]</span></a></sup> but not 
+necessarily so.</p>
+<p>Histograms are used to plot density of data, and often for <a 
+href="http://en.wikipedia.org/wiki/Density_estimation" title="Density 
+estimation">density estimation</a>: estimating the <a 
+href="http://en.wikipedia.org/wiki/Probability_density_function" 
+title="Probability density function">probability density function</a> of
+ the underlying variable. The total area of a histogram used for 
+probability density is always normalized to 1. If the length of the 
+intervals on the <i>x</i>-axis are all 1, then a histogram is identical 
+to a <a href="http://en.wikipedia.org/wiki/Relative_frequency" 
+title="Relative frequency" class="mw-redirect">relative frequency</a> 
+plot.</p>
+<p>An alternative to the histogram is <a 
+href="http://en.wikipedia.org/wiki/Kernel_density_estimation" 
+title="Kernel density estimation">kernel density estimation</a>, which 
+uses a <a href="http://en.wikipedia.org/wiki/Kernel_%28statistics%29" 
+title="Kernel (statistics)">kernel</a> to smooth samples. This will 
+construct a <a href="http://en.wikipedia.org/wiki/Smooth_function" 
+title="Smooth function">smooth</a> probability density function, which 
+will in general more accurately reflect the underlying variable.</p>
+<p>The histogram is one of the seven basic tools of <a 
+href="http://en.wikipedia.org/wiki/Quality_control" title="Quality 
+control">quality control</a>.<sup id="cite_ref-1" class="reference"><a 
+href="#cite_note-1"><span>[</span>2<span>]</span></a></sup></p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+ <span class="toctoggle">[<a href="javascript:toggleToc()" 
+class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Etymology"><span 
+class="tocnumber">1</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span 
+class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-3"><a 
+href="#Activities_and_demonstrations"><span class="tocnumber">3</span> <span
+ class="toctext">Activities and demonstrations</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Mathematical_definition"><span
+ class="tocnumber">4</span> <span class="toctext">Mathematical 
+definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Cumulative_histogram"><span
+ class="tocnumber">4.1</span> <span class="toctext">Cumulative histogram</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Number_of_bins_and_width"><span
+ class="tocnumber">4.2</span> <span class="toctext">Number of bins and 
+width</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span 
+class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span 
+class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Further_reading"><span 
+class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span 
+class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript">
+//<![CDATA[
+if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=1"
+ title="Edit section: Etymology">edit</a>]</span> <span 
+class="mw-headline" id="Etymology">Etymology</span></h2>
+<table class="metadata plainlinks mbox-small" style="border: 1px solid 
+rgb(170, 170, 170); background-color: rgb(249, 249, 249);">
+<tbody><tr>
+<td class="mbox-image"><a 
+href="http://en.wiktionary.org/wiki/Special:Search/Histogram" 
+title="Search Wiktionary"><img alt="Search Wiktionary" 
+src="Histogram_files/37px-Wiktionary-logo-en.png" height="40" width="37"></a></td>
+<td class="mbox-text" style="">Look up <i><b><a 
+href="http://en.wiktionary.org/wiki/Special:Search/histogram" 
+class="extiw" title="wiktionary:Special:Search/histogram">histogram</a></b></i>
+ in <a href="http://en.wikipedia.org/wiki/Wiktionary" title="Wiktionary">Wiktionary</a>,
+ the free dictionary.</td>
+</tr>
+</tbody></table>
+<div class="thumb tleft">
+<div class="thumbinner" style="width: 218px;"><a 
+href="http://en.wikipedia.org/wiki/File:Black_cherry_tree_histogram.svg"
+ class="image"><img alt="" 
+src="Histogram_files/216px-Black_cherry_tree_histogram.png" 
+class="thumbimage" height="216" width="216"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://en.wikipedia.org/wiki/File:Black_cherry_tree_histogram.svg"
+ class="internal" title="Enlarge"><img 
+src="Histogram_files/magnify-clip.png" alt="" height="11" width="15"></a></div>
+An example histogram of the heights of 31 <a 
+href="http://en.wikipedia.org/wiki/Prunus_serotina" title="Prunus 
+serotina">Black Cherry</a> trees.</div>
+</div>
+</div>
+<p>The etymology of the word <i>histogram</i> is uncertain. Sometimes it
+ is said to be derived from the <a 
+href="http://en.wikipedia.org/wiki/Greek_language" title="Greek 
+language">Greek</a> <i>histos</i> 'anything set upright' (as the masts 
+of a ship, the bar of a loom, or the vertical bars of a histogram); and <i>gramma</i>
+ 'drawing, record, writing'. It is also said that <a 
+href="http://en.wikipedia.org/wiki/Karl_Pearson" title="Karl Pearson">Karl
+ Pearson</a>, who introduced the term in 1895, derived the name from 
+"historical diagram".</p>
+<p><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup><br
+ style="clear: both;"></p>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=2"
+ title="Edit section: Examples">edit</a>]</span> <span 
+class="mw-headline" id="Examples">Examples</span></h2>
+<p>As an example we consider data collected by the <a 
+href="http://en.wikipedia.org/wiki/United_States_Census_Bureau" 
+title="United States Census Bureau">U.S. Census Bureau</a> on time to 
+travel to work (2000 census, <a 
+href="http://www.census.gov/prod/2004pubs/c2kbr-33.pdf" class="external 
+autonumber" rel="nofollow">[1]</a>, Table 2). The census found that 
+there were <b>124 million people</b> who work outside of their homes. An
+ interesting feature of this graph is that the number recorded for "at 
+least 30 but less than 35 minutes" is higher than for the bands on 
+either side. This is likely to have arisen from people rounding their 
+reported journey time. This rounding is a common phenomenon when 
+collecting data from people.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 352px;"><a 
+href="http://en.wikipedia.org/wiki/File:Travel_time_histogram_total_n_Stata.png"
+ class="image"><img alt="" 
+src="Histogram_files/350px-Travel_time_histogram_total_n_Stata.png" 
+class="thumbimage" height="226" width="350"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://en.wikipedia.org/wiki/File:Travel_time_histogram_total_n_Stata.png"
+ class="internal" title="Enlarge"><img 
+src="Histogram_files/magnify-clip.png" alt="" height="11" width="15"></a></div>
+Histogram of travel time, US 2000 census. Area under the curve equals 
+the total number of cases. This diagram uses Q/width from the table.</div>
+</div>
+</div>
+<table class="wikitable" style="text-align: center;">
+<caption>Data by absolute numbers</caption>
+<tbody><tr>
+<th>Interval</th>
+<th>Width</th>
+<th>Quantity</th>
+<th>Quantity/width</th>
+</tr>
+<tr>
+<td>0</td>
+<td>5</td>
+<td>4180</td>
+<td>836</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+<td>13687</td>
+<td>2737</td>
+</tr>
+<tr>
+<td>10</td>
+<td>5</td>
+<td>18618</td>
+<td>3723</td>
+</tr>
+<tr>
+<td>15</td>
+<td>5</td>
+<td>19634</td>
+<td>3926</td>
+</tr>
+<tr>
+<td>20</td>
+<td>5</td>
+<td>17981</td>
+<td>3596</td>
+</tr>
+<tr>
+<td>25</td>
+<td>5</td>
+<td>7190</td>
+<td>1438</td>
+</tr>
+<tr>
+<td>30</td>
+<td>5</td>
+<td>16369</td>
+<td>3273</td>
+</tr>
+<tr>
+<td>35</td>
+<td>5</td>
+<td>3212</td>
+<td>642</td>
+</tr>
+<tr>
+<td>40</td>
+<td>5</td>
+<td>4122</td>
+<td>824</td>
+</tr>
+<tr>
+<td>45</td>
+<td>15</td>
+<td>9200</td>
+<td>613</td>
+</tr>
+<tr>
+<td>60</td>
+<td>30</td>
+<td>6461</td>
+<td>215</td>
+</tr>
+<tr>
+<td>90</td>
+<td>60</td>
+<td>3435</td>
+<td>57</td>
+</tr>
+</tbody></table>
+<p>This histogram shows the number of cases per <a 
+href="http://en.wikipedia.org/wiki/Unit_interval" title="Unit interval">unit
+ interval</a> so that the height of each bar is equal to the proportion 
+of total people in the survey who fall into that category. The area 
+under the curve represents the total number of cases (124 million). This
+ type of histogram shows absolute numbers.<br clear="all"></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 352px;"><a 
+href="http://en.wikipedia.org/wiki/File:Travel_time_histogram_total_1_Stata.png"
+ class="image"><img alt="" 
+src="Histogram_files/350px-Travel_time_histogram_total_1_Stata.png" 
+class="thumbimage" height="226" width="350"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://en.wikipedia.org/wiki/File:Travel_time_histogram_total_1_Stata.png"
+ class="internal" title="Enlarge"><img 
+src="Histogram_files/magnify-clip.png" alt="" height="11" width="15"></a></div>
+Histogram of travel time, US 2000 census. Area under the curve equals 1.
+ This diagram uses Q/total/width from the table.</div>
+</div>
+</div>
+<table class="wikitable" style="text-align: center;">
+<caption>Data by proportion</caption>
+<tbody><tr>
+<th>Interval</th>
+<th>Width</th>
+<th>Quantity (Q)</th>
+<th>Q/total/width</th>
+</tr>
+<tr>
+<td>0</td>
+<td>5</td>
+<td>4180</td>
+<td>0.0067</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+<td>13687</td>
+<td>0.0221</td>
+</tr>
+<tr>
+<td>10</td>
+<td>5</td>
+<td>18618</td>
+<td>0.0300</td>
+</tr>
+<tr>
+<td>15</td>
+<td>5</td>
+<td>19634</td>
+<td>0.0316</td>
+</tr>
+<tr>
+<td>20</td>
+<td>5</td>
+<td>17981</td>
+<td>0.0290</td>
+</tr>
+<tr>
+<td>25</td>
+<td>5</td>
+<td>7190</td>
+<td>0.0116</td>
+</tr>
+<tr>
+<td>30</td>
+<td>5</td>
+<td>16369</td>
+<td>0.0264</td>
+</tr>
+<tr>
+<td>35</td>
+<td>5</td>
+<td>3212</td>
+<td>0.0052</td>
+</tr>
+<tr>
+<td>40</td>
+<td>5</td>
+<td>4122</td>
+<td>0.0066</td>
+</tr>
+<tr>
+<td>45</td>
+<td>15</td>
+<td>9200</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td>60</td>
+<td>30</td>
+<td>6461</td>
+<td>0.0017</td>
+</tr>
+<tr>
+<td>90</td>
+<td>60</td>
+<td>3435</td>
+<td>0.0005</td>
+</tr>
+</tbody></table>
+<p>This histogram differs from the first only in the <a 
+href="http://en.wikipedia.org/wiki/Vertical_direction" title="Vertical 
+direction">vertical</a> scale. The height of each bar is the decimal 
+percentage of the total that each category represents, and the total 
+area of all the bars is equal to 1, the decimal equivalent of 100%. The 
+curve displayed is a simple <a 
+href="http://en.wikipedia.org/wiki/Density_estimation" title="Density 
+estimation">density estimate</a>. This version shows proportions, and is
+ also known as a unit area histogram.<br clear="all"></p>
+<p>In other words a histogram represents a frequency distribution by 
+means of rectangles whose widths represent class intervals and whose 
+areas are proportional to the corresponding frequencies. The intervals 
+are placed together in order to show that the data represented by the 
+histogram while being exclusive is also continuous. (E.g., in a 
+histogram it is possible to have two connnecting intervals of 10.5-20.5 
+and 20.5-33.5, but not two connecting intervals of 10.5-20.5 and 
+22.5-32.5. Empty intervals are represented as empty and not skipped.)<sup
+ id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=3"
+ title="Edit section: Activities and demonstrations">edit</a>]</span> <span
+ class="mw-headline" id="Activities_and_demonstrations">Activities and 
+demonstrations</span></h2>
+<p>The <a href="http://en.wikipedia.org/wiki/SOCR" title="SOCR" 
+class="mw-redirect">SOCR</a> resource pages contain a number of hands-on
+ interactive activities demonstrating the concept of a histogram, 
+histogram <a 
+href="http://wiki.stat.ucla.edu/socr/index.php/SOCR_EduMaterials_ModelerActivities_MixtureModel_1"
+ class="external text" rel="nofollow">construction</a> and <a 
+href="http://wiki.stat.ucla.edu/socr/index.php/SOCR_EduMaterials_Activities_PowerTransformFamily_Graphs"
+ class="external text" rel="nofollow">manipulation</a> using Java 
+applets and <a href="http://www.socr.ucla.edu/htmls/SOCR_Charts.html" 
+class="external text" rel="nofollow">charts</a>.</p>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=4"
+ title="Edit section: Mathematical definition">edit</a>]</span> <span 
+class="mw-headline" id="Mathematical_definition">Mathematical definition</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 352px;"><a 
+href="http://en.wikipedia.org/wiki/File:Cumulative_vs_normal_histogram.svg"
+ class="image"><img alt="" 
+src="Histogram_files/350px-Cumulative_vs_normal_histogram.png" 
+class="thumbimage" height="175" width="350"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://en.wikipedia.org/wiki/File:Cumulative_vs_normal_histogram.svg"
+ class="internal" title="Enlarge"><img 
+src="Histogram_files/magnify-clip.png" alt="" height="11" width="15"></a></div>
+An ordinary and a cumulative histogram of the same data. The data shown 
+is a random sample of 10,000 points from a normal distribution with a 
+mean of 0 and a standard deviation of 1.</div>
+</div>
+</div>
+<p>In a more general mathematical sense, a histogram is a mapping <i>m</i><sub><i>i</i></sub>
+ that counts the number of observations that fall into various disjoint 
+categories (known as <i>bins</i>), whereas the graph of a histogram is 
+merely one way to represent a histogram. Thus, if we let <i>n</i> be the
+ total number of observations and <i>k</i> be the total number of bins, 
+the histogram <i>m</i><sub><i>i</i></sub> meets the following 
+conditions:</p>
+<dl>
+<dd><img class="tex" alt="n = \sum_{i=1}^k{m_i}." 
+src="Histogram_files/bcd4e32806b40ccab1b0fac73827598a.png"></dd>
+</dl>
+<h3><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=5"
+ title="Edit section: Cumulative histogram">edit</a>]</span> <span 
+class="mw-headline" id="Cumulative_histogram">Cumulative histogram</span></h3>
+<p>A cumulative histogram is a mapping that counts the cumulative number
+ of observations in all of the bins up to the specified bin. That is, 
+the cumulative histogram <i>M</i><sub><i>i</i></sub> of a histogram <i>m</i><sub><i>j</i></sub>
+ is defined as:</p>
+<dl>
+<dd><img class="tex" alt="M_i = \sum_{j=1}^i{m_j}." 
+src="Histogram_files/2fefa8920b085249e760b2ad6de7131f.png"></dd>
+</dl>
+<h3><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=6"
+ title="Edit section: Number of bins and width">edit</a>]</span> <span 
+class="mw-headline" id="Number_of_bins_and_width">Number of bins and 
+width</span></h3>
+<p>There is no "best" number of bins, and different bin sizes can reveal
+ different features of the data. Some theoreticians have attempted to 
+determine an optimal number of bins, but these methods generally make 
+strong assumptions about the shape of the distribution. You should 
+always experiment with bin widths before choosing one (or more) that 
+illustrate the salient features in your data.</p>
+<p>The number of bins <i>k</i> can be calculated directly, or from a 
+suggested bin width&nbsp;<i>h</i>:</p>
+<dl>
+<dd><img class="tex" alt="k = \left \lceil \frac{\max x - \min x}{h} 
+\right \rceil." 
+src="Histogram_files/ccdac53097862b1db671aeac23238086.png"></dd>
+</dl>
+<p>The braces indicate the <a 
+href="http://en.wikipedia.org/wiki/Floor_function#The_ceiling_function" 
+title="Floor function" class="mw-redirect">ceiling function</a>.</p>
+<dl>
+<dt>Sturges' formula<sup id="cite_ref-4" class="reference"><a 
+href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></dt>
+</dl>
+<dl>
+<dd><img class="tex" alt="k = \lceil \log_2 n + 1 \rceil, \, " 
+src="Histogram_files/0ced64b52339ffcef5ecf9fe9f9d3c8e.png"></dd>
+</dl>
+<p>which implicitly bases the bin sizes on the range of the data, and 
+can perform poorly if&nbsp;<i>n</i>&nbsp;&lt;&nbsp;30.</p>
+<dl>
+<dt>Scott's choice<sup id="cite_ref-5" class="reference"><a 
+href="#cite_note-5"><span>[</span>6<span>]</span></a></sup></dt>
+</dl>
+<dl>
+<dd><img class="tex" alt="h = \frac{3.5 \sigma}{n^{1/3}}," 
+src="Histogram_files/add8b008cf1da78b458fa84371fe6c5d.png"></dd>
+</dl>
+<p>where <span class="texhtml">σ</span> is the sample <a 
+href="http://en.wikipedia.org/wiki/Standard_deviation" title="Standard 
+deviation">standard deviation</a>.</p>
+<dl>
+<dt>Square-Root Choice</dt>
+</dl>
+<dl>
+<dd><img class="tex" alt="k = \sqrt{n}," 
+src="Histogram_files/91581e2da3cb3e8124a971014c88f24a.png"></dd>
+</dl>
+<p>which takes the square root of the number of data points in the 
+sample (used by Excel histograms and many others)</p>
+<dl>
+<dt>Freedman–Diaconis' choice<sup id="cite_ref-6" class="reference"><a 
+href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></dt>
+</dl>
+<dl>
+<dd><img class="tex" alt="h = 2 \frac{\operatorname{IQR}(x)}{n^{1/3}}," 
+src="Histogram_files/6e7c431145dce401104a0652eeb07535.png"></dd>
+</dl>
+<p>which is based on the <a 
+href="http://en.wikipedia.org/wiki/Interquartile_range" 
+title="Interquartile range">interquartile range</a>. A good discussion 
+of this and other rules for choice of bin widths is in <i>Modern Applied
+ Statistics with S</i>, § 5.6: Density Estimation.<sup id="cite_ref-7" 
+class="reference"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=7"
+ title="Edit section: See also">edit</a>]</span> <span 
+class="mw-headline" id="See_also">See also</span></h2>
+<table class="metadata plainlinks mbox-small" style="border: 1px solid 
+rgb(170, 170, 170); background-color: rgb(249, 249, 249);">
+<tbody><tr>
+<td class="mbox-image"><a 
+href="http://en.wiktionary.org/wiki/Special:Search/Histogram" 
+title="Search Wiktionary"><img alt="Search Wiktionary" 
+src="Histogram_files/37px-Wiktionary-logo-en.png" height="40" width="37"></a></td>
+<td class="mbox-text" style="">Look up <i><b><a 
+href="http://en.wiktionary.org/wiki/Special:Search/histogram" 
+class="extiw" title="wiktionary:Special:Search/histogram">histogram</a></b></i>
+ in <a href="http://en.wikipedia.org/wiki/Wiktionary" title="Wiktionary">Wiktionary</a>,
+ the free dictionary.</td>
+</tr>
+</tbody></table>
+<div class="noprint tright portal" style="border: 1px solid rgb(170, 
+170, 170); margin: 0.5em 0pt 0.5em 0.5em;">
+<table style="background: none repeat scroll 0% 0% rgb(249, 249, 249); 
+font-size: 85%; line-height: 110%;">
+<tbody><tr>
+<td><a 
+href="http://en.wikipedia.org/wiki/File:Fisher_iris_versicolor_sepalwidth.svg"
+ class="image"><img alt="" 
+src="Histogram_files/42px-Fisher_iris_versicolor_sepalwidth.png" 
+height="28" width="42"></a></td>
+<td style="padding: 0pt 0.2em;"><i><b><a 
+href="http://en.wikipedia.org/wiki/Portal:Statistics" 
+title="Portal:Statistics">Statistics portal</a></b></i></td>
+</tr>
+</tbody></table>
+</div>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Data_binning" title="Data 
+binning">Data binning</a></li>
+<li><a 
+href="http://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule" 
+title="Freedman–Diaconis rule">Freedman–Diaconis rule</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Image_histogram" title="Image 
+histogram">Image histogram</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Density_estimation" 
+title="Density estimation">Density estimation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kernel_density_estimation" 
+title="Kernel density estimation">Kernel density estimation</a>, a 
+smoother but more complex method of density estimation</li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=8"
+ title="Edit section: References">edit</a>]</span> <span 
+class="mw-headline" id="References">References</span></h2>
+<div class="references-small">
+<ol class="references">
+<li id="cite_note-0"><b><a href="#cite_ref-0">^</a></b> Howitt, D. and 
+Cramer, D. (2008) "Statistics in Psychology". Prentice Hall</li>
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span 
+class="citation web">Nancy R. Tague (2004). <a 
+href="http://www.asq.org/learn-about-quality/seven-basic-quality-tools/overview/overview.html"
+ class="external text" rel="nofollow">"Seven Basic Quality Tools"</a>. <i>The
+ Quality Toolbox</i>. <a 
+href="http://en.wikipedia.org/wiki/Milwaukee,_Wisconsin" 
+title="Milwaukee, Wisconsin" class="mw-redirect">Milwaukee, Wisconsin</a>:
+ <a href="http://en.wikipedia.org/wiki/American_Society_for_Quality" 
+title="American Society for Quality">American Society for Quality</a>. 
+p. 15<span class="printonly">. <a 
+href="http://www.asq.org/learn-about-quality/seven-basic-quality-tools/overview/overview.html"
+ class="external free" rel="nofollow">http://www.asq.org/learn-about-quality/seven-basic-quality-tools/overview/overview.html</a></span><span
+ class="reference-accessdate">. Retrieved 2010-02-05</span>.</span><span
+ class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Seven+Basic+Quality+Tools&amp;rft.atitle=The+Quality+Toolbox&amp;rft.aulast=Nancy+R.+Tague&amp;rft.au=Nancy+R.+Tague&amp;rft.date=2004&amp;rft.pages=p.+15&amp;rft.place=%5B%5BMilwaukee%2C+Wisconsin%5D%5D&amp;rft.pub=%5B%5BAmerican+Society+for+Quality%5D%5D&amp;rft_id=http%3A%2F%2Fwww.asq.org%2Flearn-about-quality%2Fseven-basic-quality-tools%2Foverview%2Foverview.html&amp;rfr_id=info:sid/en.wikipedia.org:Histogram"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-2"><b><a href="#cite_ref-2">^</a></b> <span 
+class="citation Journal">M. Eileen Magnello (December 1856). <a 
+href="http://www.rutherfordjournal.org/article010107.html" 
+class="external text" rel="nofollow">"Karl Pearson and the Origins of 
+Modern Statistics: An Elastician becomes a Statistician"</a>. <i>The New
+ Zealand Journal for the History and Philosophy of Science and 
+Technology</i> <b>1 volume</b>. <a 
+href="http://en.wikipedia.org/wiki/International_Standard_Serial_Number"
+ title="International Standard Serial Number">ISSN</a>&nbsp;<a 
+href="http://www.worldcat.org/issn/1177%E2%80%931380" class="external 
+text" rel="nofollow">1177–1380</a><span class="printonly">. <a 
+href="http://www.rutherfordjournal.org/article010107.html" 
+class="external free" rel="nofollow">http://www.rutherfordjournal.org/article010107.html</a></span>.</span><span
+ class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Karl+Pearson+and+the+Origins+of+Modern+Statistics%3A+An+Elastician+becomes+a+Statistician&amp;rft.jtitle=The+New+Zealand+Journal+for+the+History+and+Philosophy+of+Science+and+Technology&amp;rft.aulast=M.+Eileen+Magnello&amp;rft.au=M.+Eileen+Magnello&amp;rft.date=December+1856&amp;rft.volume=1+volume&amp;rft.issn=1177%E2%80%931380&amp;rft_id=http%3A%2F%2Fwww.rutherfordjournal.org%2Farticle010107.html&amp;rfr_id=info:sid/en.wikipedia.org:Histogram"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-3"><b><a href="#cite_ref-3">^</a></b> Dean, S., &amp; 
+Illowsky, B. (2009, February 19). Descriptive Statistics: Histogram. 
+Retrieved from the Connexions Web site: <a 
+href="http://cnx.org/content/m16298/1.11/" class="external free" 
+rel="nofollow">http://cnx.org/content/m16298/1.11/</a></li>
+<li id="cite_note-4"><b><a href="#cite_ref-4">^</a></b> <span 
+class="citation Journal">Sturges, H. A. (1926). "The choice of a class 
+interval". <i>J. American Statistical Association</i>: 65–66.</span><span
+ class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+choice+of+a+class+interval&amp;rft.jtitle=J.+American+Statistical+Association&amp;rft.aulast=Sturges&amp;rft.aufirst=H.+A.&amp;rft.au=Sturges%2C%26%2332%3BH.+A.&amp;rft.date=1926&amp;rft.pages=65%E2%80%9366&amp;rfr_id=info:sid/en.wikipedia.org:Histogram"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-5"><b><a href="#cite_ref-5">^</a></b> <span 
+class="citation Journal">Scott, David W. (1979). "On optimal and 
+data-based histograms". <i>Biometrika</i> <b>66</b> (3): 605–610. <a 
+href="http://en.wikipedia.org/wiki/Digital_object_identifier" 
+title="Digital object identifier">doi</a>:<a 
+href="http://dx.doi.org/10.1093%2Fbiomet%2F66.3.605" class="external 
+text" rel="nofollow">10.1093/biomet/66.3.605</a>.</span><span 
+class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=On+optimal+and+data-based+histograms&amp;rft.jtitle=Biometrika&amp;rft.aulast=Scott&amp;rft.aufirst=David+W.&amp;rft.au=Scott%2C%26%2332%3BDavid+W.&amp;rft.date=1979&amp;rft.volume=66&amp;rft.issue=3&amp;rft.pages=605%E2%80%93610&amp;rft_id=info:doi/10.1093%2Fbiomet%2F66.3.605&amp;rfr_id=info:sid/en.wikipedia.org:Histogram"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-6"><b><a href="#cite_ref-6">^</a></b> <span 
+class="citation Journal">Freedman, David; Diaconis, P. (1981). "On the 
+histogram as a density estimator: <i>L</i><sub>2</sub> theory". <i>Zeitschrift
+ für Wahrscheinlichkeitstheorie und verwandte Gebiete</i> <b>57</b> (4):
+ 453–476. <a 
+href="http://en.wikipedia.org/wiki/Digital_object_identifier" 
+title="Digital object identifier">doi</a>:<a 
+href="http://dx.doi.org/10.1007%2FBF01025868" class="external text" 
+rel="nofollow">10.1007/BF01025868</a>.</span><span class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=On+the+histogram+as+a+density+estimator%3A+%27%27L%27%27%3Csub%3E2%3C%2Fsub%3E+theory&amp;rft.jtitle=Zeitschrift+f%C3%BCr+Wahrscheinlichkeitstheorie+und+verwandte+Gebiete&amp;rft.aulast=Freedman&amp;rft.aufirst=David&amp;rft.au=Freedman%2C%26%2332%3BDavid&amp;rft.au=Diaconis%2C+P.&amp;rft.date=1981&amp;rft.volume=57&amp;rft.issue=4&amp;rft.pages=453%E2%80%93476&amp;rft_id=info:doi/10.1007%2FBF01025868&amp;rfr_id=info:sid/en.wikipedia.org:Histogram"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-7"><b><a href="#cite_ref-7">^</a></b> W. N. Venables 
+and B. D. Ripley: "Modern Applied Statistics with S", Springer, in 
+(4thedition) section 5.6: <i>Density Estimation</i></li>
+</ol>
+</div>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=9"
+ title="Edit section: Further reading">edit</a>]</span> <span 
+class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li>Lancaster, H.O. <i>An Introduction to Medical Statistics.</i> John 
+Wiley and Sons. 1974. <a 
+href="http://en.wikipedia.org/wiki/Special:BookSources/0471512508" 
+class="internal mw-magiclink-isbn">ISBN 0 471 51250-8</a></li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit&amp;section=10"
+ title="Edit section: External links">edit</a>]</span> <span 
+class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a href="http://www.census.gov/population/www/socdemo/journey.html" 
+class="external text" rel="nofollow">Journey To Work and Place Of Work</a>
+ <i>(location of census document cited in example)</i></li>
+<li><a 
+href="http://www.luminous-landscape.com/tutorials/understanding-series/understanding-histograms.shtml"
+ class="external text" rel="nofollow">Understanding histograms in 
+digital photography</a></li>
+<li><a href="http://quarknet.fnal.gov/toolkits/ati/histograms.html" 
+class="external text" rel="nofollow">Histograms: Construction, Analysis 
+and Understanding with external links and an application to particle 
+Physics.</a></li>
+<li><a href="http://2000.jukuin.keio.ac.jp/shimazaki/res/histogram.html"
+ class="external text" rel="nofollow">A Method for Selecting the Bin 
+Size of a Histogram</a></li>
+<li><a href="http://www.shodor.org/interactivate/activities/histogram/" 
+class="external text" rel="nofollow">Interactive histogram generator</a></li>
+</ul>
+<table class="navbox" style="" cellspacing="0">
+<tbody><tr>
+<td style="padding: 2px;">
+<table id="collapsibleTable0" class="nowraplinks collapsible 
+autocollapse" style="width: 100%; background: none repeat scroll 0% 0% 
+transparent; color: inherit;" cellspacing="0">
+<tbody><tr>
+<th style="" colspan="2" class="navbox-title"><span 
+class="collapseButton">[<a href="javascript:collapseTable(0);" 
+id="collapseButton0">hide</a>]</span>
+<div style="float: left; width: 6em; text-align: left;">
+<div class="noprint plainlinks navbar" style="background: none repeat 
+scroll 0% 0% transparent; padding: 0pt; font-weight: normal; border: 
+medium none; font-size: xx-small;"><a 
+href="http://en.wikipedia.org/wiki/Template:Statistics" 
+title="Template:Statistics"><span title="View this template" 
+style="border: medium none;">v</span></a>&nbsp;<span style="font-size: 
+80%;">•</span>&nbsp;<a 
+href="http://en.wikipedia.org/wiki/Template_talk:Statistics" 
+title="Template talk:Statistics"><span title="Discuss this template" 
+style="border: medium none;">d</span></a>&nbsp;<span style="font-size: 
+80%;">•</span>&nbsp;<a 
+href="http://en.wikipedia.org/w/index.php?title=Template:Statistics&amp;action=edit"
+ class="external text" rel="nofollow"><span title="Edit this template" 
+style="border: medium none;">e</span></a></div>
+</div>
+<span class="" style="font-size: 110%;"><a 
+href="http://en.wikipedia.org/wiki/Statistics" title="Statistics">Statistics</a></span></th>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Descriptive_statistics" 
+title="Descriptive statistics">Descriptive statistics</a></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"></div>
+<table class="nowraplinks navbox-subgroup" style="width: 100%;" 
+cellspacing="0">
+<tbody><tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Continuous_probability_distribution" 
+title="Continuous probability distribution">Continuous data</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"></div>
+<table class="nowraplinks navbox-subgroup" style="width: 100%;" 
+cellspacing="0">
+<tbody><tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Location_parameter" title="Location 
+parameter">Location</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Mean" title="Mean">Mean</a> (<a 
+href="http://en.wikipedia.org/wiki/Arithmetic_mean" title="Arithmetic 
+mean">Arithmetic</a>, <a 
+href="http://en.wikipedia.org/wiki/Geometric_mean" title="Geometric 
+mean">Geometric</a>, <a 
+href="http://en.wikipedia.org/wiki/Harmonic_mean" title="Harmonic mean">Harmonic</a>)<span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Median" title="Median">Median</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Mode_%28statistics%29" title="Mode 
+(statistics)">Mode</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Statistical_dispersion" 
+title="Statistical dispersion">Dispersion</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Range_%28statistics%29" title="Range 
+(statistics)">Range</a><span style="font-weight: bold;">&nbsp;·</span> <a
+ href="http://en.wikipedia.org/wiki/Standard_deviation" title="Standard 
+deviation">Standard deviation</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Coefficient_of_variation" 
+title="Coefficient of variation">Coefficient of variation</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Percentile" title="Percentile">Percentile</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Shape_of_the_distribution" 
+title="Shape of the distribution">Shape</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Variance" title="Variance">Variance</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Skewness" title="Skewness">Skewness</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Kurtosis" title="Kurtosis">Kurtosis</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Moment_%28mathematics%29" 
+title="Moment (mathematics)">Moments</a> <span style="font-weight: 
+bold;">&nbsp;·</span> <a href="http://en.wikipedia.org/wiki/L-moment" 
+title="L-moment">L-moments</a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Discrete_probability_distribution" 
+title="Discrete probability distribution">Categorical data</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Frequency_%28statistics%29" 
+title="Frequency (statistics)">Frequency</a><span style="font-weight: 
+bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Contingency_table" title="Contingency
+ table">Contingency table</a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Statistical_graphics" 
+title="Statistical graphics">Statistical graphics</a></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Bar_chart" title="Bar chart">Bar 
+chart</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Biplot" title="Biplot">Biplot</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Box_plot" title="Box plot">Box plot</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Control_chart" title="Control chart">Control
+ chart</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Correlogram" title="Correlogram">Correlogram</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Forest_plot" title="Forest plot">Forest
+ plot</a><span style="font-weight: bold;">&nbsp;·</span> <strong 
+class="selflink">Histogram</strong><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Q-Q_plot" title="Q-Q plot">Q-Q 
+plot</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Run_chart" title="Run chart">Run 
+chart</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Scatter_plot" title="Scatter plot">Scatter
+ plot</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Stemplot" title="Stemplot">Stemplot</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Statistical_inference" 
+title="Statistical inference">Inferential statistics</a><br>
+and<br>
+<a href="http://en.wikipedia.org/wiki/Statistical_hypothesis_testing" 
+title="Statistical hypothesis testing">hypothesis testing</a></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"></div>
+<table class="nowraplinks navbox-subgroup" style="width: 100%;" 
+cellspacing="0">
+<tbody><tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;">Inference</div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Confidence_interval" 
+title="Confidence interval">Confidence interval</a> (<a 
+href="http://en.wikipedia.org/wiki/Frequentist_inference" 
+title="Frequentist inference">Frequentist inference</a>)<span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Credible_interval" title="Credible 
+interval">Credible interval</a> (<a 
+href="http://en.wikipedia.org/wiki/Bayesian_inference" title="Bayesian 
+inference">Bayesian inference</a>)<span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Statistical_significance" 
+title="Statistical significance">Significance</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Meta-analysis" title="Meta-analysis">Meta-analysis</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Design_of_experiments" title="Design 
+of experiments">Design of experiments</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Controlled_experiment" 
+title="Controlled experiment" class="mw-redirect">Controlled experiment</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Natural_experiment" title="Natural 
+experiment">Natural experiment</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Observational_study" 
+title="Observational study">Observational study</a> <span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Replication_%28statistics%29" 
+title="Replication (statistics)">Replication</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Blocking_%28statistics%29" 
+title="Blocking (statistics)">Blocking</a><span style="font-weight: 
+bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Sensitivity_and_specificity" 
+title="Sensitivity and specificity">Sensitivity and specificity</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Optimal_design" title="Optimal 
+design">Optimal design</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Sample_size" title="Sample size">Sample
+ size determination</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Statistical_power" title="Statistical
+ power">Statistical power</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Effect_size" title="Effect size">Effect
+ size</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Standard_error_%28statistics%29" 
+title="Standard error (statistics)">Standard error</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Estimator" title="Estimator">General 
+estimation</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Bayes_estimator" title="Bayes 
+estimator">Bayesian estimator</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Maximum_likelihood" 
+title="Maximum likelihood">Maximum likelihood</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Method_of_moments_%28statistics%29" 
+title="Method of moments (statistics)">Method of moments</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Minimum_distance_estimation" 
+title="Minimum distance estimation">Minimum distance</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Maximum_spacing_estimation" 
+title="Maximum spacing estimation">Maximum spacing</a> <span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Density_estimation" title="Density 
+estimation">Density estimation</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;">Specific tests</div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Z-test" title="Z-test">Z-test 
+(normal)</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Student%27s_t-test" title="Student's 
+t-test">Student's t-test</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/F-test" title="F-test">F-test</a><span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Chi-square_test" title="Chi-square 
+test">Chi-square test</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Pearson%27s_chi-square_test" 
+title="Pearson's chi-square test">Pearson's chi-square test</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Wald_test" title="Wald test">Wald 
+test</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U" 
+title="Mann–Whitney U">Mann–Whitney U</a><span style="font-weight: 
+bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test" 
+title="Wilcoxon signed-rank test">Wilcoxon signed-rank test</a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Correlation" title="Correlation" 
+class="mw-redirect">Correlation</a><br>
+and<br>
+<a href="http://en.wikipedia.org/wiki/Regression_analysis" 
+title="Regression analysis">regression analysis</a></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"></div>
+<table class="nowraplinks navbox-subgroup" style="width: 100%;" 
+cellspacing="0">
+<tbody><tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;">Correlation</div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient"
+ title="Pearson product-moment correlation coefficient">Pearson 
+product-moment correlation</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Rank_correlation" title="Rank 
+correlation">Rank correlation</a> (<a 
+href="http://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient"
+ title="Spearman's rank correlation coefficient">Spearman's rho</a>, <a 
+href="http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient"
+ title="Kendall tau rank correlation coefficient">Kendall's tau</a>)<span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Partial_correlation" title="Partial 
+correlation">Partial correlation</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Confounding" title="Confounding">Confounding
+ variable</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;"><a 
+href="http://en.wikipedia.org/wiki/Linear_regression" title="Linear 
+regression">Linear regression</a></div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Simple_linear_regression" 
+title="Simple linear regression">Simple linear regression</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Ordinary_least_squares" 
+title="Ordinary least squares">Ordinary least squares</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/General_linear_model" title="General 
+linear model">General linear model</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Analysis_of_variance" 
+title="Analysis of variance">Analysis of variance</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Analysis_of_covariance" 
+title="Analysis of covariance">Analysis of covariance</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;">Non-standard</div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Nonlinear_regression" 
+title="Nonlinear regression">Nonlinear regression</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Nonparametric_regression" 
+title="Nonparametric regression">Nonparametric</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Semiparametric_regression" 
+title="Semiparametric regression">Semiparametric</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Robust_regression" title="Robust 
+regression">Robust</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style="padding-left: 0em; padding-right: 0em;">
+<div style="padding: 0em 0.75em;">Non-normal errors</div>
+</td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Generalized_linear_model" 
+title="Generalized linear model">Generalized linear model</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Binomial_regression" title="Binomial 
+regression">Binomial</a><span style="font-weight: bold;">&nbsp;·</span> <a
+ href="http://en.wikipedia.org/wiki/Poisson_regression" title="Poisson 
+regression">Poisson</a><span style="font-weight: bold;">&nbsp;·</span> <a
+ href="http://en.wikipedia.org/wiki/Logistic_regression" title="Logistic
+ regression">Logistic</a></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Survival_analysis" title="Survival 
+analysis">Survival analysis</a></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Survival_function" title="Survival 
+function">Survival function</a><span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Kaplan%E2%80%93Meier_estimator" 
+title="Kaplan–Meier estimator">Kaplan–Meier</a><span style="font-weight:
+ bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Logrank_test" title="Logrank test">Logrank
+ test</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Failure_rate" title="Failure rate">Failure
+ rate</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Proportional_hazards_models" 
+title="Proportional hazards models">Proportional hazards models</a> <span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Accelerated_failure_time_model" 
+title="Accelerated failure time model">Accelerated failure time model</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Multivariate_statistics" 
+title="Multivariate statistics">Multivariate statistics</a><br></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Multivariate_regression_model" 
+title="Multivariate regression model" class="mw-redirect">Multivariate 
+regression</a><span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Principal_component_analysis" 
+title="Principal component analysis">Principal components</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Factor_analysis" title="Factor 
+analysis">Factor analysis</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Cluster_analysis" title="Cluster 
+analysis">Cluster analysis</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Copula_%28statistics%29" 
+title="Copula (statistics)">Copulas</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Time_series_analysis" title="Time 
+series analysis" class="mw-redirect">Time series analysis</a><br></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-odd">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Decomposition_of_time_series" 
+title="Decomposition of time series">Decomposition</a><span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Trend_estimation" title="Trend 
+estimation">Trend estimation</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Box%E2%80%93Jenkins" 
+title="Box–Jenkins">Box–Jenkins</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a 
+href="http://en.wikipedia.org/wiki/Autoregressive_moving_average_model" 
+title="Autoregressive moving average model">ARMA models</a> <span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Spectral_density_estimation" 
+title="Spectral density estimation">Spectral density estimation</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-group" style=""><a 
+href="http://en.wikipedia.org/wiki/Social_statistics" title="Social 
+statistics">Social statistics</a><br></td>
+<td style="text-align: left; border-left-width: 2px; border-left-style: 
+solid; width: 100%; padding: 0px;" class="navbox-list navbox-even">
+<div style="padding: 0em 0.25em;"><a 
+href="http://en.wikipedia.org/wiki/Census" title="Census">Census</a> <span
+ style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Psychometrics" title="Psychometrics">Psychometrics</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Statistical_survey" 
+title="Statistical survey">Surveys</a> <span style="font-weight: bold;">&nbsp;·</span>
+ <a href="http://en.wikipedia.org/wiki/Sampling_%28statistics%29" 
+title="Sampling (statistics)">Sampling</a><span style="font-weight: 
+bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Stratified_sampling" 
+title="Stratified sampling">Stratified sampling</a> <span 
+style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Opinion_poll" title="Opinion poll">Opinion
+ poll</a> <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Questionnaire" title="Questionnaire">Questionnaire</a>
+ <span style="font-weight: bold;">&nbsp;·</span> <a 
+href="http://en.wikipedia.org/wiki/Official_statistics" title="Official 
+statistics">Official statistics</a></div>
+</td>
+</tr>
+<tr style="height: 2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style="" colspan="2"><b><a 
+href="http://en.wikipedia.org/wiki/Category:Statistics" 
+title="Category:Statistics">Category</a></b><span style="font-weight: 
+bold;">&nbsp;·</span> <b><a 
+href="http://en.wikipedia.org/wiki/Portal:Statistics" 
+title="Portal:Statistics">Portal</a></b><span style="font-weight: bold;">&nbsp;·</span>
+ <b><a href="http://en.wikipedia.org/wiki/Outline_of_statistics" 
+title="Outline of statistics">Outline</a></b><span style="font-weight: 
+bold;">&nbsp;·</span> <b><a 
+href="http://en.wikipedia.org/wiki/Index_of_statistics_articles" 
+title="Index of statistics articles" class="mw-redirect">Index</a></b></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7343/1000000
+Post-expand include size: 120945/2048000 bytes
+Template argument size: 74695/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:13266-0!1!0!default!!en!4 and timestamp 20100328014644 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Histogram">http://en.wikipedia.org/wiki/Histogram</a>"</div>
+			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a 
+href="http://en.wikipedia.org/wiki/Special:Categories" 
+title="Special:Categories">Categories</a>: <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Statistical_charts_and_diagrams"
+ title="Category:Statistical charts and diagrams">Statistical charts and
+ diagrams</a></span> | <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Quality_control_tools" 
+title="Category:Quality control tools">Quality control tools</a></span> |
+ <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Estimation_of_densities" 
+title="Category:Estimation of densities">Estimation of densities</a></span>
+ | <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Non-parametric_statistics" 
+title="Category:Non-parametric statistics">Non-parametric statistics</a></span></div><div
+ id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden 
+categories: <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Statistics_articles_linked_to_the_portal"
+ title="Category:Statistics articles linked to the portal">Statistics 
+articles linked to the portal</a></span> | <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Statistics_articles_with_navigational_template"
+ title="Category:Statistics articles with navigational template">Statistics
+ articles with navigational template</a></span> | <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Statistics_articles_needing_expert_attention"
+ title="Category:Statistics articles needing expert attention">Statistics
+ articles needing expert attention</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+	
+				 <li id="ca-nstab-main" class="selected"><a 
+href="http://en.wikipedia.org/wiki/Histogram" title="View the content 
+page [alt-shift-c]" accesskey="c">Article</a></li>
+				 <li id="ca-talk"><a 
+href="http://en.wikipedia.org/wiki/Talk:Histogram" title="Discussion 
+about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-edit"><a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=edit"
+ title="You can edit this page. 
+Please use the preview button before saving. [alt-shift-e]" 
+accesskey="e">Edit this page</a></li>
+				 <li id="ca-history"><a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;action=history"
+ title="Past versions of this page [alt-shift-h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+				<li id="pt-optin-try"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativeOptIn&amp;from=Histogram"
+ title="Try out new features" class="no-text-transform">Try Beta</a></li>
+				<li id="pt-login"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Histogram"
+ title="You are encouraged to log in; however, it is not mandatory. 
+[alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: 
+url(&quot;http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png&quot;);"
+ href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main 
+page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5 xml:lang="en" lang="en">Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a 
+href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page
+ [alt-shift-z]" accesskey="z">Main page</a></li>
+				<li id="n-contents"><a 
+href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to 
+browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a 
+href="http://en.wikipedia.org/wiki/Portal:Featured_content" 
+title="Featured content — the best of Wikipedia">Featured content</a></li>
+				<li id="n-currentevents"><a 
+href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find 
+background information on current events">Current events</a></li>
+				<li id="n-randompage"><a 
+href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random 
+article [alt-shift-x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5 xml:lang="en" lang="en"><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input autocomplete="off" gtbfieldid="1" id="searchInput" 
+title="Search Wikipedia" accesskey="f" name="search">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go"
+ title="Go to a page with this exact name if one exists" type="submit">&nbsp;
+
+				<input name="fulltext" class="searchButton" id="mw-searchButton" 
+value="Search" title="Search Wikipedia for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-interaction">
+		<h5 xml:lang="en" lang="en">Interaction</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-aboutsite"><a 
+href="http://en.wikipedia.org/wiki/Help:About" title="Find out about 
+Wikipedia">About Wikipedia</a></li>
+				<li id="n-portal"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" 
+title="About the project, what you can do, where to find things">Community
+ portal</a></li>
+				<li id="n-recentchanges"><a 
+href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="The 
+list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent 
+changes</a></li>
+				<li id="n-contact"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to 
+contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a 
+href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en" 
+title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents"
+ title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5 xml:lang="en" lang="en">Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a 
+href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Histogram" 
+title="List of all English Wikipedia pages containing links to this page
+ [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a 
+href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Histogram"
+ title="Recent changes in pages linked from this page [alt-shift-k]" 
+accesskey="k">Related changes</a></li>
+<li id="t-upload"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Upload" title="Upload files
+ [alt-shift-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a 
+href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="List of 
+all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;printable=yes"
+ rel="alternate" title="Printable version of this page [alt-shift-p]" 
+accesskey="p">Printable version</a></li>				<li id="t-permalink"><a 
+href="http://en.wikipedia.org/w/index.php?title=Histogram&amp;oldid=352446857"
+ title="Permanent link to this revision of the page">Permanent link</a></li><li
+ id="t-cite"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=Histogram&amp;id=352446857"
+ title="Information on how to cite this page">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5 xml:lang="en" lang="en">Languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-ca"><a 
+href="http://ca.wikipedia.org/wiki/Histograma">Català</a></li>
+				<li class="interwiki-cs"><a 
+href="http://cs.wikipedia.org/wiki/%C4%8Cetnost">Česky</a></li>
+				<li class="interwiki-da"><a 
+href="http://da.wikipedia.org/wiki/Histogram">Dansk</a></li>
+				<li class="interwiki-de"><a 
+href="http://de.wikipedia.org/wiki/Histogramm">Deutsch</a></li>
+				<li class="interwiki-el"><a 
+href="http://el.wikipedia.org/wiki/%CE%99%CF%83%CF%84%CF%8C%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1">Ελληνικά</a></li>
+				<li class="interwiki-es"><a 
+href="http://es.wikipedia.org/wiki/Histograma">Español</a></li>
+				<li class="interwiki-eu"><a 
+href="http://eu.wikipedia.org/wiki/Histograma">Euskara</a></li>
+				<li class="interwiki-fr"><a 
+href="http://fr.wikipedia.org/wiki/Histogramme">Français</a></li>
+				<li class="interwiki-ko"><a 
+href="http://ko.wikipedia.org/wiki/%ED%9E%88%EC%8A%A4%ED%86%A0%EA%B7%B8%EB%9E%A8">한
+국어</a></li>
+				<li class="interwiki-id"><a 
+href="http://id.wikipedia.org/wiki/Histogram">Bahasa Indonesia</a></li>
+				<li class="interwiki-it"><a 
+href="http://it.wikipedia.org/wiki/Istogramma">Italiano</a></li>
+				<li class="interwiki-he"><a 
+href="http://he.wikipedia.org/wiki/%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%92%D7%A8%D7%9E%D7%94">עברית</a></li>
+				<li class="interwiki-mk"><a 
+href="http://mk.wikipedia.org/wiki/%D0%A5%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D0%BC">Македонски</a></li>
+				<li class="interwiki-nl"><a 
+href="http://nl.wikipedia.org/wiki/Histogram">Nederlands</a></li>
+				<li class="interwiki-ja"><a 
+href="http://ja.wikipedia.org/wiki/%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0">日
+本語</a></li>
+				<li class="interwiki-no"><a 
+href="http://no.wikipedia.org/wiki/Histogram">‪Norsk (bokmål)‬</a></li>
+				<li class="interwiki-pms"><a 
+href="http://pms.wikipedia.org/wiki/Istograma">Piemontèis</a></li>
+				<li class="interwiki-pl"><a 
+href="http://pl.wikipedia.org/wiki/Histogram">Polski</a></li>
+				<li class="interwiki-pt"><a 
+href="http://pt.wikipedia.org/wiki/Histograma">Português</a></li>
+				<li class="interwiki-ru"><a 
+href="http://ru.wikipedia.org/wiki/%D0%93%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0">Русский</a></li>
+				<li class="interwiki-scn"><a 
+href="http://scn.wikipedia.org/wiki/Istogramma">Sicilianu</a></li>
+				<li class="interwiki-simple"><a 
+href="http://simple.wikipedia.org/wiki/Histogram">Simple English</a></li>
+				<li class="interwiki-sd"><a 
+href="http://sd.wikipedia.org/wiki/%D9%88%D8%A7%D9%82%D8%B9%D9%86%D8%A7%D9%85%D9%88">سنڌي</a></li>
+				<li class="interwiki-sk"><a 
+href="http://sk.wikipedia.org/wiki/Histogram">Slovenčina</a></li>
+				<li class="interwiki-sl"><a 
+href="http://sl.wikipedia.org/wiki/Histogram">Slovenščina</a></li>
+				<li class="interwiki-su"><a 
+href="http://su.wikipedia.org/wiki/Histogram">Basa Sunda</a></li>
+				<li class="interwiki-fi"><a 
+href="http://fi.wikipedia.org/wiki/Histogrammi">Suomi</a></li>
+				<li class="interwiki-sv"><a 
+href="http://sv.wikipedia.org/wiki/Histogram">Svenska</a></li>
+				<li class="interwiki-uk"><a 
+href="http://uk.wikipedia.org/wiki/%D0%93%D1%96%D1%81%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0">Українська</a></li>
+				<li class="interwiki-zh"><a 
+href="http://zh.wikipedia.org/wiki/%E7%9B%B4%E6%96%B9%E5%9B%BE">中文</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img 
+src="Histogram_files/poweredby_mediawiki_88x31.png" alt="Powered by 
+MediaWiki" height="31" width="88"></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img
+ src="Histogram_files/wikimedia-button.png" alt="Wikimedia Foundation" 
+height="31" width="88"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 28 March 2010 at 
+01:46.<br></li>
+					<li id="copyright">Text is available under the <a rel="license" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative
+ Commons Attribution-ShareAlike License</a><a rel="license" 
+href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: 
+none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of 
+Use</a> for details.<br>
+Wikipedia® is a registered trademark of the <a 
+href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>,
+ a non-profit organization.<br></li><li class="noprint"><a 
+class="internal" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+					<li id="privacy"><a 
+href="http://wikimediafoundation.org/wiki/Privacy_policy" 
+title="wikimedia:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:About" 
+title="Wikipedia:About">About Wikipedia</a></li>
+					<li id="disclaimer"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" 
+title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv156 in 0.049 secs. --></body></html>

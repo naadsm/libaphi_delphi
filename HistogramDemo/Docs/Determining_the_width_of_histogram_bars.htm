@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta 
+http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta 
+name="generator" content="Adobe RoboHelp 8"><title>Determining the width
+ of histogram bars</title></head><body>
+
+<!-- saved from url=(0014)about:internet -->
+
+
+
+ 
+
+<link rel="StyleSheet" 
+href="Determining_the_width_of_histogram_bars_files/default.css" 
+type="text/css">
+<script src="Determining_the_width_of_histogram_bars_files/urchin.js" type="text/javascript" language="JavaScript1.2"></script>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+if (document.location.href.lastIndexOf(".chm")==-1){_uacct = "UA-3101080-2";urchinTracker();}
+//]]></script>
+<script language="javascript" src="Determining_the_width_of_histogram_bars_files/parser.js" type="text/javascript"></script>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="Determining_the_width_of_histogram_bars_files/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="Determining_the_width_of_histogram_bars_files/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Determining_the_width_of_histogram_bars_files/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Determining_the_width_of_histogram_bars_files/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Determining_the_width_of_histogram_bars_files/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Determining_the_width_of_histogram_bars_files/whtopic.js"></script>
+
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Presenting and using results\nGraphical descriptions of model outputs\nHistogram plots\nDetermining the width of histogram bars");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script>
+<h1>Determining the width of histogram bars</h1>
+<table style="background-attachment: scroll; height: 20px; 
+background-image: url(&quot;../white-green_gradient.png&quot;); 
+background-repeat: repeat-y; left: 0px; top: 32px;" 
+background="Determining_the_width_of_histogram_bars_files/white-green_gradient.png"
+ bgcolor="#ffffff" cellspacing="0" width="791">
+	<col style="width: 100%;">
+	<tbody><tr valign="top">
+		<td style="border: 1px solid rgb(0, 0, 0); width: 100%; padding-right:
+ 10px; padding-left: 10px;"><p><span style="font-weight: bold;"><b><a 
+href="http://www.vosesoftware.com/modelrisk.htm" target="_blank"><img 
+src="Determining_the_width_of_histogram_bars_files/MR_dice_icon.jpg" 
+alt="MR_dice_icon.jpg" style="border: medium none;" align="left" 
+border="0" height="34" width="37"></a> This 
+		 page is part of the online help for <a 
+href="http://www.vosesoftware.com/modelrisk.htm" target="_top">ModelRisk</a>
+ 
+		 .</b></span> You can download a fully functional 30-day trial <a 
+href="http://www.vosesoftware.com/modelrisk_download.htm" 
+target="_blank">here</a> 
+		 . The trial comes with free product support - feel free to <a 
+href="http://www.vosesoftware.com/contact.htm" target="_blank">contact 
+		 us</a> if you have any questions.</p></td>
+	</tr>
+</tbody></table>
+<p class="see-also">See also: <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Help_on_ModelRisk/Histogram_Plots.htm">Histogram
+ 
+ plots</a>, <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Presenting_results/Graphical_descriptions_of_model_outputs.htm">Graphical
+ 
+ descriptions of model outputs</a>, <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Presenting_results/Histogram_plots/Sturges_rule.htm">Sturges
+ 
+ rule</a></p>
+<p>A histogram plot is a natural way of representing a set of samples 
+drawn 
+ from a univariate variable. It shows the range, central tendencies and 
+ shape of the distribution of the data. However, in order to make a 
+histogram 
+ plot one must decide on the number of bars to use.</p>
+<h3>Sturges' rule</h3>
+<p>Most statistical software use <span style="font-style: italic;"><i>Sturges
+ 
+ rule</i></span> which says the data range should be split into <i>k</i>
+ equally 
+ spaced classes where</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Determining_the_width_of_histogram_bars_files/image35.gif" 
+alt="image35.gif" style="border: medium none;" border="0" height="25" 
+width="100"></p>
+<p>where <img 
+src="Determining_the_width_of_histogram_bars_files/image36.gif" 
+alt="image36.gif" style="border: medium none;" border="0" height="25" 
+width="25">&nbsp;is the <span style="font-style: italic;"><i>ceiling 
+ operator</i></span> (meaning take the closest integer above the 
+calculated 
+ value). Click <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Presenting_results/Histogram_plots/Sturges_rule.htm">here</a>
+ for a more detailed 
+ explanation of this equation.</p>
+<p>Sturges' rule is the most commonly applied in statistical software, 
+ even though it is not actually that good when the data exhibit skewness
+ 
+ or any other non-normality. There are two better guidelines:</p>
+<h3><b style="font-weight: bold;">Scott's rule</b></h3>
+<p>Scott (1979) proposed that the bar width <i>w</i> should be 
+determined 
+ as follows:</p>
+<p align="center"><img 
+src="Determining_the_width_of_histogram_bars_files/image37.gif" 
+alt="image37.gif" style="border: medium none;" border="0" height="50" 
+width="89"></p>
+<p>where <i>s</i> is the sample standard deviation of the <i>n</i> data 
+ values. The equation is derived from attempting to minimize the bias in
+ 
+ variance of the histogram compared with the data set. The underlying 
+theory 
+ requires knowledge of the distribution form of the data, which we 
+rarely 
+ have, so the above equation assumes normality although this turns out 
+ to be rather unrestricting in practice.</p>
+<h3><b style="font-weight: bold;">Freedman and Diaconis' rule</b></h3>
+<p>Freedman and Diaconis (1981) proposed that the bar width <i>w</i> 
+should 
+ be determined as follows:</p>
+<p align="center"><img 
+src="Determining_the_width_of_histogram_bars_files/image38.gif" 
+alt="image38.gif" style="border: medium none;" border="0" height="50" 
+width="73"></p>
+<p>where <i>IQR</i> is the sample inter-quartile range of the <i>n</i> 
+ data values, i.e. the difference between the 75<sup>th</sup> and 25<sup>th</sup>
+ 
+ percentile of the data. The rule was based on the goal of minimizing 
+the 
+ sum of squared errors between the histogram bar height and the 
+probability 
+ density of the underlying distribution which gave the <img 
+src="Determining_the_width_of_histogram_bars_files/image39.gif" 
+alt="image39.gif" style="border: medium none;" border="0" height="30" 
+width="30">&nbsp;part 
+ of the equation. The use of 2*<i>IQR</i> as a measure of spread was 
+determined 
+ from their empirical experiments.</p>
+<h3>A recommendation</h3>
+<p>In general, <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/About_Vose_-_contacting_us.htm">we</a>
+ have 
+ found Scott's rule gives the most pleasing balance between detail and 
+ overview (Freedman and Diaconis' rule generally produces more bars), 
+but 
+ the histogram bar ranges will take awkward minimum and maximum values 
+ which makes the histogram less easy to read.</p>
+<p>In the histograms produced by <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Help_on_ModelRisk/Other_tools/Vose_Data_Analysis.htm">Vose
+ 
+ Data Analysis</a> in ModelRisk we round off to more intuitive values. 
+ The user can also overrule the settings which is most useful when there
+ 
+ are extreme tails in the data.</p>
+<p>&nbsp;</p>
+<hr align="center" width="80%">
+<p class="Footer" align="center">Â© Vose Softwareâ&#8222;¢ 2007. Reference 
+ Number: M-M0909-A</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body></html>

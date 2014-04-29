@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta 
+http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta 
+name="generator" content="Adobe RoboHelp 8"><title>Sturges rule</title></head><body>
+
+<!-- saved from url=(0014)about:internet -->
+
+
+
+ 
+
+<link rel="StyleSheet" href="Sturges_rule_files/default.css" 
+type="text/css">
+<script src="Sturges_rule_files/urchin.js" type="text/javascript" language="JavaScript1.2"></script>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+if (document.location.href.lastIndexOf(".chm")==-1){_uacct = "UA-3101080-2";urchinTracker();}
+//]]></script>
+<script language="javascript" src="Sturges_rule_files/parser.js" type="text/javascript"></script>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="Sturges_rule_files/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="Sturges_rule_files/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Sturges_rule_files/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Sturges_rule_files/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Sturges_rule_files/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="Sturges_rule_files/whtopic.js"></script>
+
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Presenting and using results\nGraphical descriptions of model outputs\nHistogram plots\nSturges rule");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../index.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script>
+<h1>Sturges' rule</h1>
+<table style="background-attachment: scroll; height: 20px; 
+background-image: url(&quot;../white-green_gradient.png&quot;); 
+background-repeat: repeat-y; left: 0px; top: 32px;" 
+background="Sturges_rule_files/white-green_gradient.png" 
+bgcolor="#ffffff" cellspacing="0" width="791">
+	<col style="width: 100%;">
+	<tbody><tr valign="top">
+		<td style="border: 1px solid rgb(0, 0, 0); width: 100%; padding-right:
+ 10px; padding-left: 10px;"><p><span style="font-weight: bold;"><b><a 
+href="http://www.vosesoftware.com/modelrisk.htm" target="_blank"><img 
+src="Sturges_rule_files/MR_dice_icon.jpg" alt="MR_dice_icon.jpg" 
+style="border: medium none;" align="left" border="0" height="34" 
+width="37"></a> This 
+		 page is part of the online help for <a 
+href="http://www.vosesoftware.com/modelrisk.htm" target="_top">ModelRisk</a>
+ 
+		 .</b></span> You can download a fully functional 30-day trial <a 
+href="http://www.vosesoftware.com/modelrisk_download.htm" 
+target="_blank">here</a> 
+		 . The trial comes with free product support - feel free to <a 
+href="http://www.vosesoftware.com/contact.htm" target="_blank">contact 
+		 us</a> if you have any questions.</p></td>
+	</tr>
+</tbody></table>
+<p class="see-also">See also: <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Presenting_results/Histogram_plots/Determining_the_width_of_histogram_bars.htm">Determining
+ 
+ the width of histogram bars</a></p>
+<p>Sturges' rule is a rule for determining how wide to choose bars (i.e.
+ 
+ of the <span style="font-style: italic;"><i>bins</i></span>) when 
+visually representing 
+ data by a histogram. It says the data range should be split into <i>k</i>
+ 
+ equally spaced classes where</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image35.gif" alt="image35.gif" style="border: 
+medium none;" border="0" height="25" width="100"></p>
+<p>where <img src="Sturges_rule_files/image36.gif" alt="image36.gif" 
+style="border: medium none;" border="0" height="25" width="25">&nbsp;is 
+the ceiling operator 
+ (meaning take the closest integer above the calculated value).</p>
+<p>Though not stated in <a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Resources/References.htm">Sturges
+ 
+ (1926)</a>, Herbert Sturges considered a histogram of <i>k</i> bins 
+where 
+ the number of data values in the <i>i</i>th bin (<i>i</i> = 0,...<i>k</i>-1)
+ 
+ is given by</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image40.gif" alt="image40.gif" style="border: 
+medium none;" border="0" height="49" width="49"></p>
+<p>Summing over all bins we get the total number of data values <i>n</i>:</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image41.gif" alt="image41.gif" style="border: 
+medium none;" border="0" height="49" width="94">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equation
+ 
+ 1</p>
+<p>The binomial expansion identity says:</p>
+<p>&nbsp;</p>
+<p align="center"><img src="Sturges_rule_files/image42.gif" 
+alt="image42.gif" style="border: medium none;" border="0" height="49" 
+width="164"></p>
+<p>&nbsp;</p>
+<p>(replacing <i>q</i> with (1-<i>p</i>) we get the binomial equation). 
+ Setting <i>p</i> = <i>q</i> = 1 in Equation 1 we get:</p>
+<p>&nbsp;</p>
+<p align="center"><img src="Sturges_rule_files/image43.gif" 
+alt="image43.gif" style="border: medium none;" border="0" height="49" 
+width="201"></p>
+<p>Solving for <i>k</i> we get Sturges' formula:</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image44.gif" alt="image44.gif" style="border: 
+medium none;" border="0" height="24" width="90"></p>
+<p>and then we take the nearest integer above this value. Implicit in 
+Sturges' 
+ rule is the assumption of a Normally distributed data set that is being
+ 
+ well approximated by a Binomial distribution with probability 0.5 
+(which 
+ gives a symmetric distribution). To see that, the expected number of 
+data 
+ points falling into the <i>i</i>th class is, from the <u><span 
+style="color: rgb(0, 0, 255);"><font color="blue"><a 
+href="http://www.vosesoftware.com/ModelRiskHelp/Distributions/Discrete_distributions/Binomial_distribution.htm">binomial
+ 
+ probability mass function</a></font></span></u>:</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image45.gif" alt="image45.gif" style="border: 
+medium none;" border="0" height="49" width="93"></p>
+<p>Setting <img src="Sturges_rule_files/image53.gif" alt="image53.gif" 
+style="border: medium none;" border="0" height="22" width="54">&nbsp;from
+ above, this reduces 
+ to <img src="Sturges_rule_files/image46.gif" alt="image46.gif" 
+style="border: medium none;" border="0" height="49" width="49">&nbsp;which
+ is Sturges' idealized histogram. 
+ Note: Sturges's paper actually gives a class width <i>w</i> as:</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+ src="Sturges_rule_files/image55.gif" alt="image55.gif" style="border: 
+medium none;" border="0" height="46" width="134"></p>
+<p>where <i>R</i> is the data range and 3.322 is 1/Log<sub>10</sub>(2), 
+ so <i>R</i>/<i>w</i> gives the formula quoted above for <i>n</i>.</p>
+<p>&nbsp;</p>
+<hr style="" align="center" width="80%">
+<p class="Footer" align="center">Â© Vose Softwareâ&#8222;¢ 2007. Reference 
+ Number: M-M0910-A</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body></html>
